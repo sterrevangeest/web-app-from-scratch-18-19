@@ -2,6 +2,8 @@
 
 This application shows data from the [Rijksmuseum API](https://rijksmuseum.github.io/). This API contains i.a. detailed information about the collection, including images and colors found in these images. The application now shows the first 100 **paintings** that contains the color #737C84 (grey/blue);
 
+![screenshot](screenshot.png)
+
 ## Data
 
 To retrieve the data from the API I used an `XMLHttpRequest`. Later I made a promise based `XMLHttpRequest`.
