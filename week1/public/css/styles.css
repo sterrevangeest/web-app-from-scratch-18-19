@@ -1,0 +1,19 @@
+body {
+  background-color: #1c2833;
+  font-family: Fira Sans;
+  color: white;
+  max-width: 30em;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 3em 0;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+
+p {
+  margin-bottom: 3em;
+}
