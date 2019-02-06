@@ -1,4 +1,6 @@
-# Week 1 - Hello API 🐒
+**Week 1 - Hello API 🐒**
+
+# Rijksmuseum API
 
 This application shows data from the [Rijksmuseum API](https://rijksmuseum.github.io/). This API contains i.a. detailed information about the collection, including images and colors found in these images. The application now shows the first 100 **paintings** that contains the color with hex-code: [#737C84](https://www.google.com/search?q=%23737C84&oq=%23737C84&aqs=chrome..69i57.4556j0j7&sourceid=chrome&ie=UTF-8);
 
