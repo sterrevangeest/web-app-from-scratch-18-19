@@ -50,7 +50,7 @@ I also tried two different ways for rendering the data:
 
 I working on this application during the Web App From Scratch course. During this course we focus on building a native HTML, CSS & JavaScript application, so no frameworks or unnecessary libraries.
 
-## Planning
+### Planning
 
 **Week 1** Hello API 🐒
 
