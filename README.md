@@ -60,15 +60,15 @@ I also tried two different ways for rendering the data:
 
 ## **Week 2** - Design and Refactor 🛠
 
-[Repository | week 2](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week2)
-
 - [ ] Goal: Breakdown the web app. Add routes en states. Render a detailpage.
+
+[Repository | week 2](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week2)
 
 ## **Week 3**- Wrapping up 🎁
 
-[Repository | week 3](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week3)
-
 - [ ] Goal: Manipulate data, create modules and reflect the product.
+
+[Repository | week 3](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week3)
 
 <!-- Maybe a table of contents here? 📚 -->
 
