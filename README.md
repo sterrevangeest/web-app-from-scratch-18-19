@@ -50,7 +50,7 @@ I also tried two different ways for rendering the data:
 1. With `document.createElement()` and `element.append()`, which you can see in [this file](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xml.js).
 2. With template literals with `.innerHTML`, whick you can find in [this file](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xmlPromise.js)
 
-## planning
+## Planning
 
 **Week 1** Hello API 🐒
 
