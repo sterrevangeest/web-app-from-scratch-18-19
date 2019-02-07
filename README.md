@@ -33,19 +33,19 @@ I working on this application during the ## Web App From Scratch course. During 
 
 ### Week 1 - Hello API 🐒
 
-[x] During week 1 we focused on rendering data from an API.
+- [x] During week 1 we focused on rendering data from an API.
 
 [Repository of week 1](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week1)
 
 ### Week 2 - Design and Refactor 🛠
 
-[ ] Goal: Breakdown the web app. Add routes en states. Render a detailpage.
+- [ ] Goal: Breakdown the web app. Add routes en states. Render a detailpage.
 
 [Repository of week 2](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week2)
 
 ### Week 3 - Wrapping up 🎁
 
-[ ] Goal: Manipulate data, create modules and reflect the product.
+- [ ] Goal: Manipulate data, create modules and reflect the product.
 
 [Repository of week 3](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week3)
 
