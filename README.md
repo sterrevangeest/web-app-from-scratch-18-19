@@ -99,7 +99,7 @@ I have tried two different ways for rendering the data:
 
 ## About Web App From Scratch
 
-I working on this application during the Web App From Scratch course. During this course we focus on building a native HTML, CSS & JavaScript application, so no frameworks or unnecessary libraries.
+I'm working on this application during the Web App From Scratch course. During this course we focus on building a native HTML, CSS & JavaScript application, so no frameworks or unnecessary libraries.
 
 ### Planning
 
