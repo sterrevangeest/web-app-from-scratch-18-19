@@ -31,7 +31,7 @@ I working on this application during the Web App From Scratch course. During thi
 
 ## Planning
 
-**Week 1** Hello API 🐒
+## **Week 1** Hello API 🐒
 
 - [x] During week 1 we focused on rendering data from an API.
 
@@ -58,13 +58,13 @@ I also tried two different ways for rendering the data:
 
 [Repository of week 1](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week1)
 
-**Week 2** - Design and Refactor 🛠
+## **Week 2** - Design and Refactor 🛠
 
 - [ ] Goal: Breakdown the web app. Add routes en states. Render a detailpage.
 
 [Repository of week 2](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week2)
 
-**Week 3**- Wrapping up 🎁
+## **Week 3**- Wrapping up 🎁
 
 - [ ] Goal: Manipulate data, create modules and reflect the product.
 
