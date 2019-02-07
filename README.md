@@ -29,14 +29,6 @@ cd web-app-from-scratch-18-19/week1
 
 I working on this application during the Web App From Scratch course. During this course we focus on building a native HTML, CSS & JavaScript application, so no frameworks or unnecessary libraries.
 
-**planning**
-
-## **Week 1** Hello API 🐒
-
-[Repository | week 1](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week1)
-
-- [x] During week 1 we focused on rendering data from an API.
-
 ## Data
 
 To retrieve the data from the API I used an `XMLHttpRequest`. Later I made a promise based `XMLHttpRequest`.
@@ -58,13 +50,21 @@ I also tried two different ways for rendering the data:
 1. With `document.createElement()` and `element.append()`, which you can see in [this file](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xml.js).
 2. With template literals with `.innerHTML`, whick you can find in [this file](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xmlPromise.js)
 
-## **Week 2** - Design and Refactor 🛠
+## planning
+
+**Week 1** Hello API 🐒
+
+[Repository | week 1](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week1)
+
+- [x] During week 1 we focused on rendering data from an API.
+
+**Week 2** - Design and Refactor 🛠
 
 - [ ] Goal: Breakdown the web app. Add routes en states. Render a detailpage.
 
 [Repository | week 2](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week2)
 
-## **Week 3**- Wrapping up 🎁
+**Week 3**- Wrapping up 🎁
 
 - [ ] Goal: Manipulate data, create modules and reflect the product.
 
