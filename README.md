@@ -88,6 +88,8 @@ The response looks like:
 }
 ```
 
+For now I only use the keys `artObjects.longTitle` and `artObjects.WebImage.url`.
+
 ### Rendering data
 
 I have tried two different ways for rendering the data:
