@@ -41,14 +41,59 @@ Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Us
 
 When working with APIs, promises help avoid deeply nested callbacks, aka "Callback Hell". Promises allow you to chain methods together using `.then()`. You can see how I created an Promise based request [here](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xmlPromise.js).
 
+### Data structure
+
+To access the data I used this URL: `https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&type=schilderij&ps=100&f.normalized32Colors.hex=%20%23737C84`
+
+The response looks like:
+
+```json
+{
+  "elapsedMilliseconds": 164,
+  "count": 359,
+  "artObjects": [
+    {
+      "links": {
+        "self": "https://www.rijksmuseum.nl/api/nl/collection/SK-C-5",
+        "web": "https://www.rijksmuseum.nl/nl/collection/SK-C-5"
+      },
+      "id": "nl-SK-C-5",
+      "objectNumber": "SK-C-5",
+      "title": "Schutters van wijk II onder leiding van kapitein Frans Banninck Cocq, bekend als de ‘Nachtwacht’",
+      "hasImage": true,
+      "principalOrFirstMaker": "Rembrandt Harmensz. van Rijn",
+      "longTitle": "Schutters van wijk II onder leiding van kapitein Frans Banninck Cocq, bekend als de ‘Nachtwacht’, Rembrandt Harmensz. van Rijn, 1642",
+      "showImage": true,
+      "permitDownload": true,
+      "webImage": {
+        "guid": "92253da1-794d-49f4-9e3c-e4c160715f53",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 100,
+        "width": 2500,
+        "height": 2034,
+        "url": "http://lh6.ggpht.com/wwx2vAS9DzFmmyeZefPjMtmCNOdjD80gvkXJcylloy40SiZOhdLHVddEZLBHtymHu53TcvqJLYZfZF7M-uvoMmG_wSI=s0"
+      },
+      "headerImage": {
+        "guid": "29a2a516-f1d2-4713-9cbd-7a4458026057",
+        "offsetPercentageX": 50,
+        "offsetPercentageY": 50,
+        "width": 1920,
+        "height": 460,
+        "url": "http://lh5.ggpht.com/SgH3Qo-vYI8GGm7-b-Qt6lXgsCAIoU2VDRwO5LYSBVNhhbZCetcvc88ZPi518MTy0MHDrna4X4ZC1ymxVJVpzps8gqw=s0"
+      },
+      "productionPlaces": []
+    }
+    // more results...
+  ]
+}
+```
+
 ### Rendering data
 
-I also tried two different ways for rendering the data:
+I have tried two different ways for rendering the data:
 
 1. With `document.createElement()` and `element.append()`, which you can see in [this file](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xml.js).
 2. With template literals with `.innerHTML`, whick you can find in [this file](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xmlPromise.js)
-
-### Data structure
 
 ## About Web App From Scratch
 
