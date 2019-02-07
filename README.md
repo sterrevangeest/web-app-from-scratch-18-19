@@ -1,47 +1,53 @@
-# Web App From Scratch @cmda-minor-web 18-19
+**Web App From Scratch @cmda-minor-web 18-19**
 
-In dit vak gaan we een web app maken zonder frameworks of onnodige libraries, dus zoveel mogelijk met native HTML, CSS & JavaScript. Het eindproduct is een modulair opgezet prototype voor een single page web app. Data wordt opgehaald uit een externe API, waar nodig gemanipuleerd en vervolgens getoond in de Web App. Je leert hoe je structuur aanbrengt in je code en hoe je hiermee 'from scratch' een (prototype voor een) web app maakt. Met deze kennis begrijp je daarnaast beter hoe bestaande api’s, libraries en frameworks werken.
+# Rijksmuseum API
 
-## Leerdoelen
+This application shows data from the [Rijksmuseum API](https://rijksmuseum.github.io/). This API contains i.a. detailed information about the collection, including images and colors found in these images. The application now shows the first 100 **paintings** that contains the color with hex-code: [#737C84](https://www.google.com/search?q=%23737C84&oq=%23737C84&aqs=chrome..69i57.4556j0j7&sourceid=chrome&ie=UTF-8);
+
+![screenshot](screenshot.png)
+
+Check the live demo [here](https://sterrevangeest.github.io/web-app-from-scratch-18-19/week1/)!
+
+<!-- ## Leerdoelen
+
 - _Je kan structuur aanbrengen in je code door patterns toe te passen. Je kan de keuze voor de gekozen patterns beargumenteren_
 - _Je kan data ophalen, manipuleren en dynamisch omzetten naar html elementen mbv templating._
 - _Je begrijpt hoe je middels asynchrone code met een externe API kan werken._
-- _Je begrijpt hoe je states in je applicaties kan managen en stelt de gebruiker op de hoogte van states waar nodig._
+- _Je begrijpt hoe je states in je applicaties kan managen en stelt de gebruiker op de hoogte van states waar nodig._ -->
+<!--
+[Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjZGWGPC_RMvTMry8YW5XOM79GEIdgS7I5JlOe6OeeOUdmv7ok1s9jQhzojNE4AsyzgL-jJCbRj1LN/pubhtml?gid=0&single=true) -->
 
-[Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjZGWGPC_RMvTMry8YW5XOM79GEIdgS7I5JlOe6OeeOUdmv7ok1s9jQhzojNE4AsyzgL-jJCbRj1LN/pubhtml?gid=0&single=true)
+## Installing
+
+```
+git clone https://github.com/sterrevangeest/web-app-from-scratch-18-19.git
+
+cd web-app-from-scratch-18-19/week1
+```
+
+## Web App From Scratch
+
+I working on this application during the ## Web App From Scratch course. During this course we focus on building a native HTML, CSS & JavaScript application, so no frameworks or unnecessary libraries.
 
 ## Lesprogramma
 
 ### Week 1 - Hello API 🐒
 
-Doel: Data ophalen uit een API en renderen in een overzichtspagina.
+[x] During week 1 we focused on rendering data from an API.
 
-[Opdrachten](https://drive.google.com/open?id=1OVhWQNaCgSluYviTKKWcApkyPd23xow1PiExb8GYANM)
-
-[Slides](https://drive.google.com/open?id=1Rjl9xqXoKniQSRJPdkU1O5YwWC33SJK8KiV0a-H_xZU)
+[Repository of week 1](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week1)
 
 ### Week 2 - Design and Refactor 🛠
 
-Doel: Breakdown maken van de web app. Routes en states toevoegen. Detailpagina renderen.
+[ ] Goal: Breakdown the web app. Add routes en states. Render a detailpage.
 
-[Opdrachten](https://drive.google.com/open?id=1GMDTdW3LycAYpZSFI6gk_lrKrx8-zLWrNh69aaVEH5Y)
-
-[Slides](https://drive.google.com/open?id=1IqQeu1m0dQiSC_KCvrn8eencAgtYe7X6qT-gm0n9Bmc)
+[Repository of week 2](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week2)
 
 ### Week 3 - Wrapping up 🎁
 
-Doel: Data manipuleren. Code splitsen in modules. Reflecteren op eindresultaat.
+[ ] Goal: Manipulate data, create modules and reflect the product.
 
-[Opdrachten](https://drive.google.com/open?id=13pKQu72pshaEzKw9q5JHLa-aop85nMP6nDCdqioWjoQ)
-
-[Slides](https://drive.google.com/open?id=1BSzGYNLMgtHD4HRnK7f0DgyTv4Pg3xsQwD_eYNo7v0Y)
-
-
-<!-- Add a link to your live demo in Github Pages 🌐-->
-
-<!-- ☝️ replace this description with a description of your own work -->
-
-<!-- Add a nice image here at the end of the week, showing off your shiny frontend 📸 -->
+[Repository of week 3](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week3)
 
 <!-- Maybe a table of contents here? 📚 -->
 
