@@ -4,6 +4,8 @@
 
 This application shows data from the [Rijksmuseum API](https://rijksmuseum.github.io/). This API contains i.a. detailed information about the collection, including images and colors found in these images. The application now shows the first 100 **paintings** that contains the color with hex-code: [#737C84](https://www.google.com/search?q=%23737C84&oq=%23737C84&aqs=chrome..69i57.4556j0j7&sourceid=chrome&ie=UTF-8);
 
+> "The Rijksmuseum OAI-PMH API provides access to more than 600,000 descriptions of objects (metadata) and digital images from the Rijksmuseum collection and this number is still growing."
+
 ![screenshot](screenshot.png)
 
 Check the live demo [here](https://sterrevangeest.github.io/web-app-from-scratch-18-19/week1/)!
@@ -45,6 +47,8 @@ I also tried two different ways for rendering the data:
 
 1. With `document.createElement()` and `element.append()`, which you can see in [this file](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xml.js).
 2. With template literals with `.innerHTML`, whick you can find in [this file](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xmlPromise.js)
+
+### Data structure
 
 ## About Web App From Scratch
 
