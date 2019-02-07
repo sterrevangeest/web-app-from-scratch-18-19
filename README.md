@@ -105,21 +105,21 @@ I'm working on this application during the Web App From Scratch course. During t
 
 **Week 1** Hello API 🐒
 
-[Repository | week 1](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week1)
-
 - [x] During week 1 we focused on rendering data from an API.
+
+[Repository](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week1)
 
 **Week 2** - Design and Refactor 🛠
 
 - [ ] Goal: Breakdown the web app. Add routes en states. Render a detailpage.
 
-[Repository | week 2](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week2)
+[Repository](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week2)
 
 **Week 3**- Wrapping up 🎁
 
 - [ ] Goal: Manipulate data, create modules and reflect the product.
 
-[Repository | week 3](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week3)
+[Repository](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week3)
 
 <!-- Maybe a table of contents here? 📚 -->
 
