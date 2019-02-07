@@ -27,7 +27,7 @@ git clone https://github.com/sterrevangeest/web-app-from-scratch-18-19.git
 cd web-app-from-scratch-18-19/week1
 ```
 
-## Data
+## About the data
 
 To retrieve the data from the API I used an `XMLHttpRequest`. Later I made a promise based `XMLHttpRequest`.
 
@@ -45,7 +45,7 @@ When working with APIs, promises help avoid deeply nested callbacks, aka "Callba
 
 To access the data I used this URL: `https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&type=schilderij&ps=100&f.normalized32Colors.hex=%20%23737C84`
 
-The response looks like:
+The response looks somewhat like this:
 
 ```json
 {
