@@ -10,9 +10,13 @@ var request = new XMLHttpRequest();
 var loadData = new Promise(function(resolve, reject) {
   request.open("GET", url, true);
   request.onload = function() {
-    //console.log(resolve);
-    var data = JSON.parse(this.response);
-    resolve(data);
+    if (this.status == 200) {
+      var data = JSON.parse(this.response);
+      resolve(data);
+    } else {
+      //when this.status is different than 200: "reject"
+      reject(this.statusText);
+    }
   };
   request.send();
 });
@@ -32,15 +36,12 @@ function getFilteredData(data) {
 }
 
 function createElements(filteredData) {
-  console.log(typeof filteredData);
-  console.log(filteredData);
   var div = document.querySelector("div");
-  div.innerHTML = `${filteredData
+  div.innerHTML = filteredData
     .map(
       data => `
-        <img src="${data.webImage.url}" alt="">
-        <p>Titel:${data.longTitle}</p>`
+          <img src="${data.webImage.url}" alt="">
+          <p>Titel: ${data.longTitle}</p>`
     )
-    .join("")}
-`;
+    .join("");
 }
