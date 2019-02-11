@@ -22,11 +22,11 @@ var loadData = new Promise(function(resolve, reject) {
 });
 
 loadData
-  .then(data => {
+  .then(function(data) {
     var filteredData = getFilteredData(data);
     var elements = createElements(filteredData);
   })
-  .catch(err => {
+  .catch(function(err) {
     console.log(err);
   });
 
@@ -38,10 +38,10 @@ function getFilteredData(data) {
 function createElements(filteredData) {
   var div = document.querySelector("div");
   div.innerHTML = filteredData
-    .map(
-      data => `
-          <img src="${data.webImage.url}" alt="">
-          <p>Titel: ${data.longTitle}</p>`
-    )
+    .map(function(data) {
+      return `
+        <img src="${data.webImage.url}" alt="">
+        <p>Titel: ${data.longTitle}</p>`;
+    })
     .join("");
 }
