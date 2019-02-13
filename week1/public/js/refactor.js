@@ -14,35 +14,32 @@ var router = {
 var api = {
   get: function(route) {
     //fetch  data from api
-    console.log("3: Fetch  data from api");
     var url =
       "https://www.rijksmuseum.nl/api/nl/collection?key=GJXUiTlF&format=json&ps=100";
     fetch(url)
       .then(response => {
-        console.log("4: Response ->", response);
         var response = response.json();
-        console.log(response);
         return response;
       })
       .then(data => {
+        //filter data
         this.filter(data);
       })
-
       .catch(error => {
         console.log("OOPS: Something went wrong:");
         console.log(error);
       });
   },
 
-  parse: function(response) {},
+  filter: function(data) {
+    var filteredData = data.artObjects;
+    render.all(filteredData);
+  },
   store: function(response) {
     // save data to object || local storage
     // render.overview();
   },
-  filter: function(data) {
-    var filteredData = data.artObjects;
-    render.all(filteredData);
-  }
+  parse: function(response) {}
 };
 
 //RENDER
@@ -51,9 +48,7 @@ var render = {
   overview: function() {},
   detail: function() {},
   all: function(data) {
-    console.log(data);
     var div = document.querySelector("div");
-
     div.innerHTML = data
       .map(
         data => `
