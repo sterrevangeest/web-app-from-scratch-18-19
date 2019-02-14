@@ -38,15 +38,16 @@ With an `XMLHttpRequest` you can retrieve any type of data from a URL (without h
 
 Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest) </details>
 
-<!-- <details> <summary> </summary> </details> -->
-
 <details> <summary>Promise based XHR</summary>
 
 When working with APIs, promises help avoid deeply nested callbacks, aka "Callback Hell". Promises allow you to chain methods together using `.then()`. You can see how I created an Promise based request [here](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xmlPromise.js).
 
 </details>
-### Fetch
 
+<details> <summary>Fetch
+</summary>
+ </details>
+ 
 ### Data structure
 
 To access the data I used this URL: `https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&type=schilderij&ps=100&f.normalized32Colors.hex=%20%23737C84`
@@ -107,25 +108,13 @@ I have tried two different ways for rendering the data:
 
 I'm working on this application during the Web App From Scratch course. During this course we focus on building a native HTML, CSS & JavaScript application, so no frameworks or unnecessary libraries.
 
-### Planning
+### To Do
 
-**Week 1** Hello API 🐒
-
-- [x] During week 1 we focused on rendering data from an API.
-
-[Repository](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week1)
-
-**Week 2** - Design and Refactor 🛠
-
-- [ ] Goal: Breakdown the web app. Add routes en states. Render a detailpage.
-
-[Repository](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week2)
-
-**Week 3**- Wrapping up 🎁
-
-- [ ] Goal: Manipulate data, create modules and reflect the product.
-
-[Repository](https://github.com/sterrevangeest/web-app-from-scratch-18-19/tree/master/week3)
+- [x] Rendering dat from an API.
+- [x] Refactor code to Object Literals. See results [here:](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/refactor.js)
+- [] Users can filter by color.
+- [] Create a detail page, with Routie.
+- [] Create modules.
 
 <!-- Maybe a table of contents here? 📚 -->
 
