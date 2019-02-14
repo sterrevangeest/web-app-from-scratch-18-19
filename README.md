@@ -112,11 +112,11 @@ I'm working on this application during the Web App From Scratch course. During t
 
 ### To Do
 
-- [x] Rendering dat from an API.
-- [x] Refactor code to Object Literals. See results [here:](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/refactor.js)
-- [ ] Users can filter by color.
-- [ ] Create a detail page, with Routie.
-- [ ] Create modules.
+- [x] Rendering dat from an API
+- [x] Refactor code to Object Literals. See results [here](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/refactor.js)
+- [ ] Users can filter by color
+- [ ] Create a detail page, with Routie
+- [ ] Create modules
 
 <!-- Maybe a table of contents here? 📚 -->
 
