@@ -106,6 +106,14 @@ I have tried two different ways for rendering the data:
 
 ## The code
 
+### Actor Diagram
+
+A diagram on WHO handles functionality in my application.
+
+### Interaction Diagram
+
+A diagram on WHAT happens in the code.
+
 ## About Web App From Scratch
 
 I'm working on this application during the Web App From Scratch course. During this course we focus on building a native HTML, CSS & JavaScript application, so no frameworks or unnecessary libraries.
