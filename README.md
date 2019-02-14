@@ -31,8 +31,7 @@ cd web-app-from-scratch-18-19/week1
 
 To retrieve the data I have worked out different requests.
 
-<details>
-  <summary> XMLHttpRequest (XHR)</summary>
+<details> <summary> XMLHttpRequest (XHR)</summary>
 
 With an `XMLHttpRequest` you can retrieve any type of data from a URL (without having to do a full page refresh). You can see how I created this request [here](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xml.js).
 
@@ -42,9 +41,7 @@ Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Us
 
 When working with APIs, promises help avoid deeply nested callbacks, aka "Callback Hell". Promises allow you to chain methods together using `.then()`. You can see how I created an Promise based request [here](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xmlPromise.js).
 
-</details>
-
-<details> <summary>Fetch
+</details><details> <summary>Fetch
 </summary>
  </details>
 
@@ -116,10 +113,6 @@ A diagram on WHO handles functionality in my application.
 
 A diagram on WHAT happens in the code.
 
-## About Web App From Scratch
-
-I'm working on this application during the Web App From Scratch course. During this course we focus on building a native HTML, CSS & JavaScript application, so no frameworks or unnecessary libraries.
-
 ### To Do
 
 - [x] Rendering dat from an API
@@ -127,6 +120,10 @@ I'm working on this application during the Web App From Scratch course. During t
 - [ ] Users can filter by color
 - [ ] Create a detail page, with Routie
 - [ ] Create modules
+
+## About Web App From Scratch
+
+I'm working on this application during the Web App From Scratch course. During this course we focus on building a native HTML, CSS & JavaScript application, so no frameworks or unnecessary libraries.
 
 <!-- Maybe a table of contents here? 📚 -->
 
