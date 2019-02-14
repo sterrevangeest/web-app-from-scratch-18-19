@@ -111,7 +111,7 @@ A diagram on WHO handles functionality in my application.
 
 A diagram on WHAT happens in the code.
 
-### To Do
+## To Do
 
 - [x] Rendering dat from an API
 - [x] Refactor code to Object Literals. See results [here](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/refactor.js)
