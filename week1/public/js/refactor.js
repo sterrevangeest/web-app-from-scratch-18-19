@@ -1,5 +1,4 @@
 //ROUTER
-
 var router = {
   detail: function() {
     routie(":objectNumber", function(objectNumber) {
@@ -17,7 +16,6 @@ var router = {
 };
 
 //API
-
 var api = {
   get: function(route, objectNumber) {
     if (route === "overview") {
@@ -62,9 +60,7 @@ var api = {
       });
     });
 
-    console.log(filteredData);
     render.overview(filteredData);
-
     router.detail(data.objectNumber);
   },
   store: function(response) {
@@ -90,16 +86,13 @@ var render = {
   },
 
   detail: function(data) {
-    console.log(data);
     var data = data.artObject;
     console.log(data.description);
     var div = document.querySelector("div");
-    div.innerHTML = `
-    <h2>${data.title}</h2>
-    <img src="${data.webImage.url}" alt="">
-    <p>${data.description}</p>
-    <p>${data.colors}</p>
-    `;
+    div.innerHTML = ` <h2>${data.title}</h2>
+                      <img src="${data.webImage.url}" alt="">
+                      <p>${data.description}</p>
+                      <p>${data.colors}</p>`;
   }
 };
 
