@@ -1,29 +1,47 @@
 //ROUTER
 
 var router = {
-  route: "/",
-  overview: function() {
-    console.log("2: Overview route");
-    api.get("overview");
+  detail: function() {
+    routie(":objectNumber", function(objectNumber) {
+      api.get("detail", objectNumber);
+    });
   },
-  detail: function() {}
+  overview: function() {
+    routie("/alles", function() {
+      api.get("overview");
+    });
+  },
+  overview: function() {
+    api.get("overview");
+  }
 };
 
 //API
 
 var api = {
-  get: function(route) {
-    //fetch  data from api
-    var url =
-      "https://www.rijksmuseum.nl/api/nl/collection?key=GJXUiTlF&format=json&ps=100";
+  get: function(route, objectNumber) {
+    if (route === "overview") {
+      var url =
+        "https://www.rijksmuseum.nl/api/nl/collection?key=GJXUiTlF&format=json&ps=100";
+    } else if (route === "detail") {
+      var url =
+        "https://www.rijksmuseum.nl/api/nl/collection/" +
+        objectNumber +
+        "?key=GJXUiTlF&format=json";
+    }
+
     fetch(url)
       .then(response => {
         var response = response.json();
         return response;
       })
       .then(data => {
-        //filter data
-        this.filter(data);
+        if (route === "overview") {
+          this.filter(data);
+        } else {
+          console.log("detail");
+          render.detail(data);
+        }
       })
       .catch(error => {
         console.log("OOPS: Something went wrong:");
@@ -32,8 +50,22 @@ var api = {
   },
 
   filter: function(data) {
-    var filteredData = data.artObjects;
-    render.all(filteredData);
+    console.log(data);
+    var filteredData = [];
+    var data = data.artObjects;
+    data.forEach(function(data) {
+      filteredData.push({
+        title: data.title,
+        objectNumber: data.objectNumber,
+        imgUrl: data.webImage.url,
+        detailUrl: data.links.self + "?key=GJXUiTlF&format=json"
+      });
+    });
+
+    console.log(filteredData);
+    render.overview(filteredData);
+
+    router.detail(data.objectNumber);
   },
   store: function(response) {
     // save data to object || local storage
@@ -43,21 +75,32 @@ var api = {
 };
 
 //RENDER
-
 var render = {
-  overview: function() {},
-  detail: function() {},
-  all: function(data) {
+  overview: function(data) {
     var div = document.querySelector("div");
     div.innerHTML = data
       .map(
         data => `
-          <img src="${data.webImage.url}" alt="">
-          <p>${data.title}</p>`
+            <img src="${data.imgUrl}" alt="">
+            <p>${data.title}</p>
+            <a href=#${data.objectNumber}>Bekijk meer<a>
+            `
       )
       .join("");
+  },
+
+  detail: function(data) {
+    console.log(data);
+    var data = data.artObject;
+    console.log(data.description);
+    var div = document.querySelector("div");
+    div.innerHTML = `
+    <h2>${data.title}</h2>
+    <img src="${data.webImage.url}" alt="">
+    <p>${data.description}</p>
+    <p>${data.colors}</p>
+    `;
   }
 };
 
-console.log("1: Start router:");
 router.overview();
