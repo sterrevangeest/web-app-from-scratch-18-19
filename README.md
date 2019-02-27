@@ -105,7 +105,7 @@ I have tried two different ways for rendering the data:
 
 A diagram on WHO handles functionality in my application.
 
-![actordiagram](actorD.png)
+![actordiagram](actorDiagram.png)
 
 ### Interaction Diagram
 
