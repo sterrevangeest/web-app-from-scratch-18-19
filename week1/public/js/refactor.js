@@ -1,18 +1,19 @@
-//ROUTER
+//ROUTES
 var router = {
-  overview: function() {
-    routie("", function() {
-      api.get("overview").then(function(data) {
-        render.overview(data);
-      });
-    });
-  },
-  detail: function() {
-    routie(":objectNumber", function(objectNumber) {
-      console.log(objectNumber);
-      api.get("detail", objectNumber).then(function(data) {
-        render.detail(data);
-      });
+  handle: function() {
+    routie({
+      "": function() {
+        render.loader();
+        api.get("overview").then(function(data) {
+          render.overview(data);
+        });
+      },
+      "/:objectNumber": function(objectNumber) {
+        render.loader();
+        api.get("detail", objectNumber).then(function(data) {
+          render.detail(data);
+        });
+      }
     });
   }
 };
@@ -32,28 +33,26 @@ var api = {
 
   get: function(route, objectNumber) {
     console.log(route);
-    console.log(objectNumber);
-
     if (route === "overview") {
       var url =
         "https://www.rijksmuseum.nl/api/nl/collection?key=GJXUiTlF&format=json&ps=100";
-      return api.getOverview(url);
+      return api.callOverview(url);
     } else if (route === "detail") {
       var url =
         "https://www.rijksmuseum.nl/api/nl/collection/" +
         objectNumber +
         "?key=GJXUiTlF&format=json";
-      return api.getDetail(url);
+      return api.callDetail(url);
     }
   },
 
-  getOverview: function(url) {
+  callOverview: function(url) {
     return fetch(url)
-      .then(response => {
+      .then(function(response) {
         var response = response.json();
         return response;
       })
-      .then(data => {
+      .then(function(data) {
         console.log(data);
         var filteredData = []; //clean
         var data = data.artObjects;
@@ -68,14 +67,14 @@ var api = {
         return filteredData;
       });
   },
-  getDetail: function(url) {
+  callDetail: function(url) {
     console.log(url);
     return fetch(url)
-      .then(response => {
+      .then(function(response) {
         var response = response.json();
         return response;
       })
-      .then(data => {
+      .then(function(data) {
         console.log(data);
         return data.artObject;
       });
@@ -89,15 +88,22 @@ var api = {
 
 //RENDER
 var render = {
+  loader: function() {
+    console.log("laden....");
+    var div = document.querySelector("div");
+    div.innerHTML = `<h2>DATA AAN HET OPHALEN...</h2>`;
+  },
   overview: function(data) {
     console.log(data);
     var div = document.querySelector("div");
     div.innerHTML = data
       .map(
         data => `
+        <div>
             <img src="${data.imgUrl}" alt="">
             <p>${data.title}</p>
-            <a href=#/${data.objectNumber}>Bekijk meer<a>
+            <a href=#/${data.objectNumber}>Meer info</a>
+        </div>
             `
       )
       .join("");
@@ -105,29 +111,13 @@ var render = {
 
   detail: function(data) {
     //var data = data.artObject;
-    console.log("DETAIL");
-
     var div = document.querySelector("div");
     div.innerHTML = ` <h2>${data.title}</h2>
                         <img src="${data.webImage.url}" alt="">
+                        <p>${data.subTitle}</p>
                         <p>${data.description}</p>
                         <p>${data.colors}</p>`;
   }
 };
 
-// router.overview();
-
-routie({
-  "": function() {
-    api.get("overview").then(function(data) {
-      render.overview(data);
-    });
-  },
-  "/:objectNumber": function(objectNumber) {
-    api.get("detail", objectNumber).then(function(data) {
-      render.detail(data);
-    });
-  }
-});
-
-console.log(routie);
+router.handle();
