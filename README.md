@@ -45,7 +45,7 @@ I use a `fetch` request now.
 
 ### Data structure
 
-To access the data I used this URL: `https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&ps=100&`
+<!-- To access the data I used this URL: `https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&ps=100&` -->
 
 The response looks somewhat like this:
 
@@ -102,13 +102,13 @@ I have tried two different ways for rendering the data:
 
 ### Actor Diagram
 
-A diagram on WHO handles functionality in my application.
+The actor diagram shows **who** handles functionality in my application.
 
 ![actordiagram](actor.png)
 
 ### Interaction Diagram
 
-A diagram on WHAT happens in the code.
+The interaction diagram shows **what** happens in the code.
 
 ![actordiagram](interaction.png)
 
