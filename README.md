@@ -39,6 +39,8 @@ Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Us
 
 When working with APIs, promises help avoid deeply nested callbacks, aka "Callback Hell". Promises allow you to chain methods together using `.then()`. You can see how I created an Promise based request [here](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xmlPromise.js).
 
+</details>
+
 I use a `fetch` request now.
 
 ### Data structure
