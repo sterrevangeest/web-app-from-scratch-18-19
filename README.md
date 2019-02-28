@@ -105,11 +105,13 @@ I have tried two different ways for rendering the data:
 
 A diagram on WHO handles functionality in my application.
 
-![actordiagram](actorDiagram.png)
+![actordiagram](actor.png)
 
 ### Interaction Diagram
 
 A diagram on WHAT happens in the code.
+
+![actordiagram](interaction.png)
 
 ## To Do
 
