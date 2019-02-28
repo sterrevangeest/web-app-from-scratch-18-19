@@ -43,7 +43,7 @@ I use a `fetch` request now.
 
 ### Data structure
 
-To access the data I used this URL: `https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&ps=100&``
+To access the data I used this URL: `https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&ps=100&`
 
 The response looks somewhat like this:
 
