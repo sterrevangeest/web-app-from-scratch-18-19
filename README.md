@@ -39,13 +39,11 @@ Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Us
 
 When working with APIs, promises help avoid deeply nested callbacks, aka "Callback Hell". Promises allow you to chain methods together using `.then()`. You can see how I created an Promise based request [here](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xmlPromise.js).
 
-</details><details> <summary>Fetch
-</summary>
- </details>
+I use a `fetch` request now.
 
 ### Data structure
 
-To access the data I used this URL: `https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&type=schilderij&ps=100&f.normalized32Colors.hex=%20%23737C84`
+To access the data I used this URL: `https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&ps=100&``
 
 The response looks somewhat like this:
 
@@ -90,13 +88,12 @@ The response looks somewhat like this:
 }
 ```
 
-For now I only use the keys `artObjects.longTitle` and `artObjects.WebImage.url`.
-
 ### Rendering data
 
 I have tried two different ways for rendering the data:
 
-1. With `document.createElement()` and `element.append()`, which you can see in [this file](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xml.js).
+1. With `document.createElement()` and `element.append()`, which you can see in [this file](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xml.js). personally I think this way is "cleaner", but when you have to create lots of elements, the code will become less readable.
+
 2. With template literals with `.innerHTML`, whick you can find in [this file](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xmlPromise.js)
 
 ## The code
@@ -117,8 +114,9 @@ A diagram on WHAT happens in the code.
 
 - [x] Rendering dat from an API
 - [x] Refactor code to Object Literals. See results [here](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/refactor.js)
-- [ ] Users can filter by color
-- [ ] Create a detail page, with Routie
+- [x] Create a detail page, with Routie
+- [ ] Add local storage to detail page
+- [ ] Let users filter by color
 - [ ] Create modules
 
 ## About Web App From Scratch
