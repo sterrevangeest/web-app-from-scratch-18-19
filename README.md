@@ -20,6 +20,8 @@ cd web-app-from-scratch-18-19/week1
 
 ## About the data
 
+### API request
+
 To retrieve the data I have worked out different requests.
 
 <details> <summary> XMLHttpRequest (XHR)</summary>
