@@ -6,11 +6,11 @@
         "": function() {
           render.loader();
           if (localStorage.length !== 0) {
-            console.log("er is localStorage");
+            console.log("there is localStorage");
             var data = JSON.parse(localStorage.getItem("data"));
             render.overview(data);
           } else {
-            // console.log("geen localStorage");
+            console.log("no localStorage");
             api.get("overview").then(function(data) {
               render.overview(data);
               return data;
@@ -75,9 +75,7 @@
               detailUrl: data.links.self + "?key=GJXUiTlF&format=json"
             });
           });
-
           api.store(filteredData);
-          return filteredData;
         });
     },
 
@@ -93,7 +91,6 @@
     },
 
     store: function(data) {
-      console.log(data);
       return localStorage.setItem("data", JSON.stringify(data));
     }
   };
