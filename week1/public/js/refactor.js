@@ -75,7 +75,9 @@
               detailUrl: data.links.self + "?key=GJXUiTlF&format=json"
             });
           });
+
           api.store(filteredData);
+          return filteredData;
         });
     },
 
