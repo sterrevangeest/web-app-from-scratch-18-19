@@ -90,7 +90,7 @@ I have tried two different ways for rendering the data:
 
 2. With template literals with `.innerHTML`, whick you can find in [this file](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xmlPromise.js)
 
-## The code
+## How it works
 
 ### Actor Diagram
 
@@ -117,6 +117,12 @@ This interaction diagram shows what I want my code to look like.
 - [ ] Add local storage to detail page
 - [ ] Let users filter by color
 - [ ] Create modules
+
+## Sources
+
+- [Rijksmuseum API](http://rijksmuseum.github.io/)
+- [MDN](https://developer.mozilla.org/en-US/)
+- [WAFS Github](https://github.com/cmda-minor-web/web-app-from-scratch-1819)
 
 ## About Web App From Scratch
 
