@@ -123,6 +123,7 @@ This interaction diagram shows what I want my code to look like.
 - [Rijksmuseum API](http://rijksmuseum.github.io/)
 - [MDN](https://developer.mozilla.org/en-US/)
 - [WAFS](https://github.com/cmda-minor-web/web-app-from-scratch-1819)
+- [LocalStorage in JavaScript](https://blog.logrocket.com/the-complete-guide-to-using-localstorage-in-javascript-apps-ba44edb53a36)
 
 ## About Web App From Scratch
 
