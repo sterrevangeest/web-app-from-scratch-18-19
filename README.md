@@ -2,22 +2,13 @@
 
 # Rijksmuseum API
 
-This application shows data from the [Rijksmuseum API](https://rijksmuseum.github.io/). This API contains i.a. detailed information about the collection, including images and colors found in these images. The application now shows the first 100 **paintings** that contains the color with hex-code: [#737C84](https://www.google.com/search?q=%23737C84&oq=%23737C84&aqs=chrome..69i57.4556j0j7&sourceid=chrome&ie=UTF-8);
+This application shows data from the [Rijksmuseum API](https://rijksmuseum.github.io/). This API contains i.a. detailed information about the collection, including images and colors found in these images. The application now shows the first 100 results.
 
 > "The Rijksmuseum OAI-PMH API provides access to more than **600,000 descriptions** of objects (metadata) and digital images from the Rijksmuseum collection and this number is still growing."
 
 ![screenshot](screenshot.png)
 
 Check the live demo [here](https://sterrevangeest.github.io/web-app-from-scratch-18-19/week1/)!
-
-<!-- ## Leerdoelen
-
-- _Je kan structuur aanbrengen in je code door patterns toe te passen. Je kan de keuze voor de gekozen patterns beargumenteren_
-- _Je kan data ophalen, manipuleren en dynamisch omzetten naar html elementen mbv templating._
-- _Je begrijpt hoe je middels asynchrone code met een externe API kan werken._
-- _Je begrijpt hoe je states in je applicaties kan managen en stelt de gebruiker op de hoogte van states waar nodig._ -->
-<!--
-[Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjZGWGPC_RMvTMry8YW5XOM79GEIdgS7I5JlOe6OeeOUdmv7ok1s9jQhzojNE4AsyzgL-jJCbRj1LN/pubhtml?gid=0&single=true) -->
 
 ## Installing
 
@@ -41,11 +32,12 @@ When working with APIs, promises help avoid deeply nested callbacks, aka "Callba
 
 </details>
 
-I use a `fetch` request now.
+**fetch**
+
+I use a `fetch()` request now. Personally I think fetch is the most readable form
+Fetch returns a promise with the HTTP response. To get the JSON from the response, I use the `json()` method.
 
 ### Data structure
-
-<!-- To access the data I used this URL: `https://www.rijksmuseum.nl/api/nl/collection?key=[API_KEY]&format=json&ps=100&` -->
 
 The response looks somewhat like this:
 
