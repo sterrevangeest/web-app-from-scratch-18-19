@@ -105,12 +105,9 @@ The interaction diagram shows **what** happens in the code.
 This interaction diagram shows what happens right now.
 ![actordiagram](interaction.png)
 
-<details>
-<summary>
 This interaction diagram shows what I want my code to look like.
-</summary>
+
 ![actordiagrambetereversie](actordiagrambetereversie.png)
-</details>
 
 ## To Do
 
