@@ -28,11 +28,9 @@ With an `XMLHttpRequest` you can retrieve any type of data from a URL (without h
 
 Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest) </details> <details> <summary>Promise based XHR</summary>
 
-When working with APIs, promises help avoid deeply nested callbacks, aka "Callback Hell". Promises allow you to chain methods together using `.then()`. You can see how I created an Promise based request [here](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/xmlPromise.js).
+When working with APIs, promises help avoid deeply nested callbacks, aka "Callback Hell". Promises allow you to chain methods together using `.then()`. You can see how I created an Promise based request [here](https://github.com/sterrevangeest/web-app-from-scratch-18-19/blob/master/week1/public/js/refactor.js).</details>
 
-</details>
-
-**fetch**
+**Fetch**
 
 I use a `fetch()` request now. Personally I think fetch is the most readable form
 Fetch returns a promise with the HTTP response. To get the JSON from the response, I use the `json()` method.
