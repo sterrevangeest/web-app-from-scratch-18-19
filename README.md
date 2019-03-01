@@ -1,4 +1,4 @@
-**Web App From Scratch @cmda-minor-web 18-19**
+🎓 **Web App From Scratch @cmda-minor-web 18-19**
 
 # Rijksmuseum API
 
